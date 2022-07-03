@@ -16,6 +16,7 @@
     <modules>
         <module>mybatisTest</module>
         <module>common</module>
+        <module>mockito</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
