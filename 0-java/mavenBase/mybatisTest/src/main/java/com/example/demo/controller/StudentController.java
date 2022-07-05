@@ -26,4 +26,10 @@ public class StudentController {
     public String getName() {
         return studentService.getById(1).getName();
     }
+
+    //作为启动器的测试方法
+    @GetMapping("/demo1")
+    public String getNameTest() {
+        return studentService.getName();
+    }
 }

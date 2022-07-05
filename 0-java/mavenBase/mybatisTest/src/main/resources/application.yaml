@@ -11,3 +11,6 @@ spring:
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
     min-pool-size: 5
+
+test:
+  name: test2

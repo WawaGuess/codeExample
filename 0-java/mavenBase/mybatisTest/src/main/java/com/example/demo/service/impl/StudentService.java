@@ -4,7 +4,9 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.demo.domain.Student;
 import com.example.demo.mapper.StudentMapper;
 import com.example.demo.service.IStudentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import test.com.HelloService;
 
 /**
  * @author WawaGuess
@@ -19,10 +21,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentService extends ServiceImpl<StudentMapper, Student> implements IStudentService {
 
+    @Autowired
+    private HelloService service;
 
+    // 作为启动器的测试方法
     @Override
     public String getName() {
 
-        return "test";
+        return service.sayHello();
     }
 }

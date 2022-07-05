@@ -18,6 +18,7 @@
         <module>common</module>
         <module>mockito</module>
         <module>h2Test</module>
+        <module>testSpringBootStarter</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
